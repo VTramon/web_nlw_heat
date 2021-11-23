@@ -16,7 +16,7 @@ type Message = {
 
 let messagesQueue: Message[] = [];
 
-const socket = io("http://localhost:4000");
+const socket = io("http://localhost:3000");
 
 socket.on("new_message", (newMessage: Message) => {
   messagesQueue.push(newMessage);
